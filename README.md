@@ -1,4 +1,3 @@
-````markdown
 # RNN Quote Completion
 
 A Natural Language Processing project that uses a Recurrent Neural Network (RNN) to learn patterns from a collection of quotes and predict the next word in a given sequence.
@@ -7,32 +6,33 @@ The project demonstrates how text can be transformed into numerical sequences, p
 
 ## Live Demo
 
-🚀 **Try the application live:** [RNN Quote Completion](YOUR_STREAMLIT_APP_URL)
+🚀 **Try the application live:**
+https://rnn-quote-completion-burhan.streamlit.app/
 
 ## Features
 
-- Text preprocessing and cleaning
-- Tokenization
-- Sequence generation
-- Padding of input sequences
-- Word embeddings
-- Recurrent Neural Network (RNN)
-- Next-word prediction
-- Quote completion
-- Temperature-based text generation
-- Interactive Streamlit interface
+* Text preprocessing and cleaning
+* Tokenization
+* Sequence generation
+* Padding of input sequences
+* Word embeddings
+* Recurrent Neural Network (RNN)
+* Next-word prediction
+* Quote completion
+* Temperature-based text generation
+* Interactive Streamlit interface
 
 ## Tech Stack
 
-- Python
-- TensorFlow
-- Keras
-- NumPy
-- Streamlit
+* Python
+* TensorFlow
+* Keras
+* NumPy
+* Streamlit
 
 ## How It Works
 
-The model follows a text-generation pipeline:
+The model follows this text-generation pipeline:
 
 ```text
 Quote Dataset
@@ -54,9 +54,9 @@ Dense + Softmax
 Next Word Prediction
      ↓
 Quote Completion
-````
+```
 
-The model learns relationships between words from the training data. Given a sequence of words, it predicts the most probable next word.
+The model learns relationships between words from the training data. Given a sequence of words, it predicts the most probable next word and uses the prediction to generate a continuation.
 
 ## Model Architecture
 
@@ -78,22 +78,22 @@ Next Word
 
 ### Embedding Layer
 
-The embedding layer converts tokenized words into dense numerical vectors that allow the neural network to learn relationships between words.
+The embedding layer converts tokenized words into dense numerical vectors, allowing the neural network to learn meaningful relationships between words.
 
 ### RNN Layer
 
-The Recurrent Neural Network processes the sequence while maintaining information from previous words, allowing the model to learn sequential patterns in text.
+The Recurrent Neural Network processes the input sequence while maintaining information from previous words, allowing the model to learn sequential patterns in text.
 
 ### Dense + Softmax
 
-The final layer produces probabilities for possible next words. The word with the highest probability can be selected as the predicted next word.
+The final layer produces probability scores for possible next words. The model uses these probabilities to select a likely next word and continue generating text.
 
 ## Example
 
 Given an input such as:
 
 ```text
-"Life is"
+Life is
 ```
 
 the model predicts a likely continuation based on patterns learned from the training dataset.
@@ -124,7 +124,6 @@ streamlit run app.py
 ```
 
 The application will open in your browser.
-
 
 ## Concepts Demonstrated
 
@@ -159,6 +158,3 @@ This project demonstrates practical implementation of:
 **Burhan Arshad**
 
 Computer Science Student | Machine Learning & AI
-
-```
-```

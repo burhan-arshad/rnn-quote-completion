@@ -1,8 +1,6 @@
-pandas 
+pandas
 numpy
 matplotlib
 seaborn
 tensorflow
-numpy
 streamlit
-pickle
