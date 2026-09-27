@@ -105,7 +105,7 @@ The generated output depends on the model's learned vocabulary and training data
 Clone the repository:
 
 ```bash
-git clone YOUR_REPOSITORY_URL
+git clone https://github.com/burhan-arshad/rnn-quote-completion
 cd rnn-quote-completion
 ```
 
